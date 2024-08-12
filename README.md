@@ -35,8 +35,8 @@ Ensure you have the following installed on your system:
 1. **Clone the repository:**
 
 ```bash
-   git clone https://github.com/yourusername/stunning-landing-page.git
-   cd stunning-landing-page
+   git clone https://github.com/Zsombinszky/Landing-page.git
+   cd frontend-tribe-light-saas-landing-page-template
 ```
 
 2. **Install dependencies:**
