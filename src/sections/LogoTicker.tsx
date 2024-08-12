@@ -7,8 +7,9 @@ import pulseLogo from "@/assets/logo-pulse.png";
 import apexLogo from "@/assets/logo-apex.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import React from "react";
 
-export const LogoTicker = () => {
+export const LogoTicker : React.FC = () => {
   return (
     <div className="py-8 md:py-12 bg-white">
       <div className="container">

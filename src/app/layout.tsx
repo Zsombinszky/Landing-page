@@ -1,25 +1,40 @@
-import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+'use client'
+import {DM_Sans} from "next/font/google";
 import "./globals.css";
-import { twMerge } from "tailwind-merge";
+import {twMerge} from "tailwind-merge";
+import Lenis from 'lenis';
+import React, {useEffect} from "react";
 
-const dmSans = DM_Sans({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
-};
+const dmSans = DM_Sans({subsets: ["latin"]});
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className="relative">
-      <body className={twMerge(dmSans.className, "antialiased bg-[#EAEEFE]")}>
+
+    useEffect(() => {
+        const lenis = new Lenis();
+
+        function raf(time: number) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+        return () => {
+            lenis.destroy();
+            // @ts-ignore
+            cancelAnimationFrame(raf);
+        };
+    }, []);
+
+    return (
+        <html lang="en" className="relative">
+        <body className={twMerge(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }

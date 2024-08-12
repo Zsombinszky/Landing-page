@@ -4,9 +4,9 @@ import starImage from "@/assets/star.png";
 import springImage from "@/assets/spring.png";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import React, { useRef } from "react";
 
-export const CallToAction = () => {
+export const CallToAction: React.FC = () => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,

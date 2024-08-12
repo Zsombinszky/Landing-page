@@ -10,9 +10,9 @@ import {
   useTransform,
   useMotionValueEvent,
 } from "framer-motion";
-import { useRef } from "react";
+import React, { useRef } from "react";
 
-export const Hero = () => {
+export const Hero: React.FC = () => {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -21,7 +21,7 @@ export const Hero = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   return (
-    <section
+    <section id={"hero"}
       ref={heroRef}
       className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip"
     >

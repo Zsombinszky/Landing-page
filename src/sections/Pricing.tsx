@@ -2,6 +2,7 @@
 import CheckIcon from "@/assets/check.svg";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
+import React from "react";
 
 const pricingTiers = [
   {
@@ -55,9 +56,9 @@ const pricingTiers = [
   },
 ];
 
-export const Pricing = () => {
+export const Pricing : React.FC = () => {
   return (
-    <section className="py-24 bg-white">
+    <section id={"pricing"} className="py-24 bg-white">
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title">Pricing</h2>
