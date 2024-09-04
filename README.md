@@ -36,7 +36,6 @@ Ensure you have the following installed on your system:
 
 ```bash
    git clone https://github.com/Zsombinszky/Landing-page.git
-   cd frontend-tribe-light-saas-landing-page-template
 ```
 
 2. **Install dependencies:**
