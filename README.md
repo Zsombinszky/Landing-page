@@ -1,17 +1,24 @@
 # 🚀 Stunning Landing Page with React, Next.js, TailwindCSS & Framer Motion
 
- This project is designed to master cutting-edge tools like React, Next.js, TailwindCSS, and Framer Motion, enabling to create digital masterpieces that stand out in today's competitive market.
+![Landing Page Screenshot](./src/assets/landingpage2.png)
+![Landing Page Screenshot](./src/assets/landingpage1.png)
+
+This project is designed to master cutting-edge tools like React, Next.js, TailwindCSS, and Framer Motion, enabling to
+create digital masterpieces that stand out in today's competitive market.
 
 ## 🎯 Project Overview
 
- The landing page is a fully responsive, SEO-friendly website with stunning animations and efficient design. By working on this project, I strengthened my front-end development skills and built a portfolio piece that truly shines.
+The landing page is a fully responsive, SEO-friendly website with stunning animations and efficient design. By working
+on this project, I strengthened my front-end development skills and built a portfolio piece that truly shines.
 
 ## 🛠️ Technologies Used
 
-- **React & Next.js**: Build lightning-fast, SEO-friendly websites with the same tools used by tech giants like Facebook and Netflix.
+- **React & Next.js**: Build lightning-fast, SEO-friendly websites with the same tools used by tech giants like Facebook
+  and Netflix.
 - **TypeScript**: Ensure type safety and cleaner code, making your project more maintainable and scalable.
 - **TailwindCSS**: Efficiently style your components with a utility-first approach, boosting your productivity.
-- **Framer Motion**: Create jaw-dropping animations with silky-smooth interactions that impress potential employers and clients.
+- **Framer Motion**: Create jaw-dropping animations with silky-smooth interactions that impress potential employers and
+  clients.
 - **Lenis Scroll**: To make sure our scroll is smooth for the animations i used Lenis scroll.
 
 ## 💻 Features
